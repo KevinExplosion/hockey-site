@@ -1,1 +1,9 @@
-{{outlet}}
+<div class="container">
+  <h2>Articles</h2>
+
+    <ul>
+      {{#each model as |article|}}
+        {{article-tile article=article}}
+      {{/each}}
+    </ul>
+</div>
