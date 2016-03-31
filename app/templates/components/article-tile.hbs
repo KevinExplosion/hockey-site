@@ -1,2 +1,7 @@
-<li>{{article.title}}, by {{article.author}}</li>
-  <p>{{article.body}}{{article.image}}</p>
+<li><h4>{{article.title}}</h4> <h5>{{article.author}}</h5></li>
+  <blockquote>{{article.body}}</blockquote>
+  {{#if isImageShowing}}
+    <img src={{article.image}} alt={{article.title}} {{action 'imageHide'}}>
+  {{else}}
+    <button {{action 'imageShow'}}>Show Image</button>
+  {{/if}}
