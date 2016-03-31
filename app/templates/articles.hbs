@@ -3,7 +3,7 @@
 
     <ul>
       {{#each model as |article|}}
-        {{article-tile article=article}}
+        {{article-tile article=article destroyArticle="destroyArticle"}}
       {{/each}}
     </ul>
 </div>
