@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('rinks');
+  this.route('articles');
+  this.route('news');
 });
 
 export default Router;
