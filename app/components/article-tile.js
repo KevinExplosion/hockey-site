@@ -9,6 +9,9 @@ export default Ember.Component.extend({
     imageHide: function() {
       this.set('isImageShowing', false);
     },
+    update(article, params) {
+      this.sendAction('update', article, params);
+    },
     delete(article) {
       if (confirm('Are you sure you want to remove this article?')) {
         this.sendAction('destroyArticle', article);
